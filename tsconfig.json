@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "lib": ["es2017", "DOM"],
+    "strict": false,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "rootDir": "./",
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": ["./types"],
+    "types": ["node"],
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "include": ["./src/**/*.ts"]
+}
