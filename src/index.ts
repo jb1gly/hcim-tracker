@@ -7,15 +7,15 @@ let connection: Connection;
 
 const setup = async () => {
   connection = await createDB();
-  new CronJob.CronJob(
-    // "* * * * *", // for testing purposes, start the job every minute
-    "*/20 * * * *",
-    () => init(),
-    null,
-    true,
-    "America/Los_Angeles"
-  );
-  // init(); // for testing purposes, start the job and run it once
+  // new CronJob.CronJob(
+  //   // "* * * * *", // for testing purposes, start the job every minute
+  //   "*/20 * * * *",
+  //   () => init(),
+  //   null,
+  //   true,
+  //   "America/Los_Angeles"
+  // );
+  init(); // for testing purposes, start the job and run it once
 };
 
 async function init() {
